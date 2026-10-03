@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="th" translate="no" class="dark scroll-smooth notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <title>JAIKLA ACTIVE WELLNESS | เคลื่อนไหวแบบที่ใช่ ใช้ชีวิตแบบคุณ</title>
+  <meta name="description" content="JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม โดย บริษัท ใจกล้า ดิจิตอล จำกัด" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JAIKLA ACTIVE WELLNESS" />
+  <meta property="og:title" content="JAIKLA ACTIVE WELLNESS | Move Better. Live Better." />
+  <meta property="og:description" content="JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    :root {
+      --font-sans: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', 'Anuphan', sans-serif;
+      --font-display: 'Outfit', 'IBM Plex Sans Thai', 'Anuphan', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: #111111;
+      color: #F8F8FA;
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+    .font-display { font-family: var(--font-display); }
+    .font-mono-tabular { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+    .jaikla-display-hero { font-size: clamp(2.35rem, 5vw, 4.35rem); line-height: 1.14; letter-spacing: -0.02em; }
+    .jaikla-display-section { font-size: clamp(1.75rem, 3.6vw, 3rem); line-height: 1.2; letter-spacing: -0.015em; }
+    .jaikla-display-statement { font-size: clamp(1.35rem, 2.5vw, 2.15rem); line-height: 1.28; }
+    .jaikla-btn-primary {
+      background: linear-gradient(135deg, #4B1FD6 0%, #5B1FA6 52%, #7C3AED 100%);
+      box-shadow: 0 10px 28px -6px rgba(124, 58, 237, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+      transition: all 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .jaikla-btn-primary:hover {
+      background: linear-gradient(135deg, #5B25E6 0%, #6E22B8 52%, #8B5CF6 100%);
+      box-shadow: 0 14px 34px -4px rgba(124, 58, 237, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+      transform: translateY(-1px);
+    }
+    .jaikla-photo-grade {
+      filter: contrast(1.08) brightness(0.96) saturate(0.92);
+      transition: all 400ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .jaikla-input-field {
+      width: 100%;
+      background: rgba(23, 23, 26, 0.85);
+      border: 1px solid rgba(248, 248, 250, 0.14);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      color: #F8F8FA;
+      outline: none;
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+    }
+    .jaikla-input-field:focus {
+      border-color: #7C3AED;
+      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.22);
+    }
+  </style>
+</head>
+<body class="selection:bg-[#7C3AED] selection:text-[#F8F8FA]">
+
+  <!-- Top Scroll Progress -->
+  <div id="scroll-progress-bar" class="fixed top-0 left-0 h-[2px] bg-gradient-to-r from-[#4B1FD6] via-[#7C3AED] to-[#EBDDFF] z-50 transition-all duration-75" style="width: 0%"></div>
+
+  <!-- Main Fixed Header -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-[#111111]/85 backdrop-blur-md border-b border-[#F8F8FA]/8">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <svg class="w-8 h-8 shrink-0" viewBox="0 0 120 120" fill="none">
+          <defs>
+            <linearGradient id="jk-nav-up" x1="8" y1="84" x2="82" y2="12" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4B1FD6" />
+              <stop offset="50%" stop-color="#5B1FA6" />
+              <stop offset="100%" stop-color="#7C3AED" />
+            </linearGradient>
+            <linearGradient id="jk-nav-lo" x1="35" y1="74" x2="112" y2="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4B1FD6" />
+              <stop offset="60%" stop-color="#7C3AED" />
+              <stop offset="100%" stop-color="#EBDDFF" />
+            </linearGradient>
+          </defs>
+          <path d="M12 92 C 16 52, 42 20, 72 16 C 88 14, 96 24, 88 38 C 76 56, 48 76, 26 94 Z" fill="url(#jk-nav-up)" />
+          <path d="M38 78 C 58 54, 84 36, 102 34 C 112 33, 116 40, 110 50 C 98 68, 70 88, 48 96 Z" fill="url(#jk-nav-lo)" />
+        </svg>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-sm sm:text-base tracking-widest text-[#F8F8FA]">J A I K L A</span>
+          <span class="text-[9px] font-mono-tabular tracking-wider text-[#A1A1AA] uppercase">ACTIVE WELLNESS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider text-[#A1A1AA]">
+        <a href="#about" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.about">เกี่ยวกับเรา</a>
+        <a href="#field-gallery" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.experience">ประสบการณ์</a>
+        <a href="#solutions" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.solutions">โซลูชัน</a>
+        <a href="#science" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.science">ความรู้การเคลื่อนไหว</a>
+        <a href="#community" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.community">คอมมูนิตี้</a>
+        <a href="#partner" class="hover:text-[#F8F8FA] transition-colors" data-i18n="nav.partner">สำหรับองค์กร</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Language Switcher -->
+        <div class="flex items-center rounded-xl bg-[#17171A] border border-[#F8F8FA]/10 p-0.5">
+          <button id="lang-btn-th" onclick="setLanguage('th')" class="px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]">TH</button>
+          <button id="lang-btn-en" onclick="setLanguage('en')" class="px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]">EN</button>
+        </div>
+
+        <button onclick="openInquiryModal()" class="hidden sm:inline-flex jaikla-btn-primary px-4 py-2.5 rounded-xl text-xs font-semibold tracking-wider text-[#F8F8FA] items-center gap-2 cursor-pointer">
+          <span data-i18n="nav.startProject">เริ่มโปรเจกต์กับเรา</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-28 pb-16 lg:py-0 flex items-center overflow-hidden border-b border-[#F8F8FA]/8">
+      <div class="absolute inset-0 pointer-events-none">
+        <img src="https://ais-pre-t24eotciay4q5eawlpfnsz-534214540450.asia-southeast1.run.app/assets/images/studio/hero_active_wellness_1790751977250.jpg" onerror="this.src='https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1600&auto=format&fit=crop'" alt="Active Wellness Hero Backdrop" class="w-full h-full object-cover opacity-40 jaikla-photo-grade" />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/85 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 w-full py-12 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left 7 Columns -->
+          <div class="lg:col-span-7 space-y-7">
+            <div class="pt-3 sm:pt-5 lg:pt-7 space-y-3.5 sm:space-y-4">
+              <h1 class="font-display jaikla-display-hero font-extrabold text-[#F8F8FA]">
+                <span class="block" data-i18n="hero.line1">เคลื่อนไหวแบบที่ใช่</span>
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#F8F8FA] via-[#EBDDFF] to-[#7C3AED] mt-1" data-i18n="hero.line2">ใช้ชีวิตแบบคุณ</span>
+              </h1>
+
+              <div class="space-y-3 sm:space-y-3.5">
+                <p class="text-lg sm:text-xl text-[#F8F8FA]/92 font-normal" data-i18n="hero.lead">
+                  เราอยากให้เรื่องการดูแลร่างกายเป็นเรื่องที่เข้าใจง่ายและทำได้จริง จึงออกแบบกิจกรรมที่ช่วยให้ผู้คนรู้จักร่างกายของตัวเอง เคลื่อนไหวอย่างมั่นใจ และดูแลตัวเองได้ต่อเนื่อง
+                </p>
+                <p class="text-base sm:text-lg text-[#A1A1AA] font-light border-l-2 border-[#7C3AED] pl-4" data-i18n="hero.secondaryLead">
+                  JAIKLA ACTIVE WELLNESS เชื่อมความรู้เรื่องร่างกาย กีฬา การเคลื่อนไหว การฟื้นตัว และคอมมูนิตี้ ให้กลายเป็นประสบการณ์ที่คนอยากเข้ามามีส่วนร่วม
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 pt-1">
+              <a href="#journey" class="jaikla-btn-primary px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] inline-flex items-center gap-2.5 whitespace-nowrap min-h-[48px]">
+                <span data-i18n="hero.ctaExplore">รู้จัก JAIKLA ACTIVE WELLNESS</span>
+                <span>→</span>
+              </a>
+              <button type="button" onclick="openInquiryModal('Corporate Wellness')" class="px-7 py-4 rounded-xl text-xs sm:text-sm font-semibold tracking-wider text-[#F8F8FA] bg-[#17171A]/90 hover:bg-[#22222A] border border-[#F8F8FA]/15 hover:border-[#7C3AED] transition-all duration-200 inline-flex items-center gap-2 whitespace-nowrap min-h-[48px] cursor-pointer">
+                <span data-i18n="hero.ctaWork">คุยกับเรา</span>
+                <span class="text-[#EBDDFF]">↗</span>
+              </button>
+            </div>
+
+            <!-- Core Concept Formula -->
+            <div class="pt-3 border-t border-[#F8F8FA]/10 space-y-1.5">
+              <p class="text-xs font-mono-tabular tracking-wider text-[#A1A1AA] leading-relaxed">
+                <span class="text-[#EBDDFF]" data-i18n="hero.coreConceptLabel">แนวคิดหลัก</span> ·
+                <span data-i18n="hero.coreConceptFormula">ความรู้เรื่องร่างกาย × การเคลื่อนไหว × การฟื้นตัว × ประสบการณ์ × คอมมูนิตี้</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Right 5 Columns: Visual Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="p-6 rounded-2xl bg-[#141418] border border-[#F8F8FA]/10 shadow-2xl space-y-4">
+              <div class="flex items-center justify-between text-xs font-mono-tabular text-[#EBDDFF]">
+                <span>POSITIONING</span>
+                <span class="px-2 py-0.5 rounded bg-[#4B1FD6]/30 border border-[#7C3AED]/40 text-[#EBDDFF]">ACTIVE WELLNESS</span>
+              </div>
+              <h3 class="font-display text-xl font-bold text-[#F8F8FA]">ทีมออกแบบประสบการณ์สุขภาพและการเคลื่อนไหว</h3>
+              <p class="text-sm text-[#A1A1AA] leading-relaxed">
+                เชื่อมความรู้เรื่องร่างกาย กีฬา การฟื้นตัว และคอมมูนิตี้ให้ทำงานร่วมกันเพื่อการใช้ชีวิตที่ดีอย่างยั่งยืน
+              </p>
+              <div class="pt-2 grid grid-cols-2 gap-3 text-xs">
+                <div class="p-3 rounded-xl bg-[#1A1A22] border border-[#F8F8FA]/8">
+                  <span class="text-[#EBDDFF] font-semibold block">Body Literacy</span>
+                  <span class="text-[11px] text-[#A1A1AA]">ความเข้าใจกลไกสรีระ</span>
+                </div>
+                <div class="p-3 rounded-xl bg-[#1A1A22] border border-[#F8F8FA]/8">
+                  <span class="text-[#EBDDFF] font-semibold block">Sustainable Habit</span>
+                  <span class="text-[11px] text-[#A1A1AA]">ทำต่อได้จริงในชีวิตประจำวัน</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-STAGE JOURNEY SECTION -->
+    <section id="journey" class="relative py-24 lg:py-32 bg-[#111111] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-mono-tabular uppercase tracking-widest text-[#EBDDFF]">02 · THE JOURNEY</span>
+          <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA] mt-2">
+            5 ระยะของประสบการณ์การเคลื่อนไหว
+          </h2>
+          <p class="text-sm sm:text-base text-[#A1A1AA] mt-3">
+            เราออกแบบกระบวนการให้ผู้เข้าร่วมค่อย ๆ เรียนรู้และพัฒนาตัวเองอย่างมั่นใจในทุกย่างก้าว
+          </p>
+        </div>
+
+        <div id="journey-cards-container" class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS SECTION -->
+    <section id="solutions" class="py-24 lg:py-32 bg-[#121212] border-b border-[#F8F8FA]/8">
+      <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-mono-tabular uppercase tracking-widest text-[#EBDDFF]">03 · SOLUTIONS</span>
+          <h2 class="font-display jaikla-display-section font-extrabold text-[#F8F8FA] mt-2">
+            รูปแบบบริการและการออกแบบกิจกรรม
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div id="solutions-list" class="lg:col-span-5 flex flex-col gap-3"></div>
+          <div class="lg:col-span-7 p-7 rounded-2xl bg-[#17171F] border border-[#7C3AED]/40 flex flex-col justify-between">
+            <div class="space-y-4">
+              <span id="sol-detail-index" class="text-xs font-mono-tabular text-[#EBDDFF]">SOLUTION 01 / 05</span>
+              <h3 id="sol-detail-title" class="font-display text-2xl font-bold text-[#F8F8FA]">โซนฟื้นฟูร่างกายหลังการเคลื่อนไหว</h3>
+              <p id="sol-detail-summary" class="text-sm sm:text-base text-[#F8F8FA]/90 leading-relaxed"></p>
+              <div class="pt-3 border-t border-[#F8F8FA]/10">
+                <h4 class="text-xs font-mono-tabular text-[#EBDDFF] uppercase tracking-wider mb-2">โปรแกรมในแพ็กเกจ</h4>
+                <ul id="sol-detail-programs" class="space-y-2 text-xs sm:text-sm text-[#F8F8FA]/80"></ul>
+              </div>
+            </div>
+            <div class="pt-6">
+              <button onclick="openInquiryModal('Solutions Inquiry')" class="jaikla-btn-primary px-6 py-3.5 rounded-xl text-xs font-semibold tracking-wider text-[#F8F8FA] cursor-pointer">
+                ปรึกษาโปรเจกต์นี้ →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FINAL CTA -->
+    <section id="contact" class="relative py-28 lg:py-36 bg-[#111111] overflow-hidden text-center">
+      <div class="max-w-3xl mx-auto px-4 space-y-6">
+        <span class="text-xs font-mono-tabular tracking-widest text-[#EBDDFF] uppercase">KNOWLEDGE × MOVEMENT × EXPERIENCE</span>
+        <h2 class="font-display jaikla-display-hero font-extrabold text-[#F8F8FA]">
+          มาเริ่มเคลื่อนไหวไปด้วยกัน
+        </h2>
+        <p class="text-base sm:text-lg text-[#A1A1AA]">
+          ร่วมออกแบบประสบการณ์สุขภาพและการเคลื่อนไหวที่สร้างคุณค่าแท้จริงกับ JAIKLA ACTIVE WELLNESS
+        </p>
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+          <button onclick="openInquiryModal('General Inquiry')" class="jaikla-btn-primary px-8 py-4 rounded-xl text-sm font-semibold tracking-wider text-[#F8F8FA] cursor-pointer">
+            เริ่มโปรเจกต์กับเรา →
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: Project Inquiry -->
+  <div id="inquiry-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-[#17171C] border border-[#F8F8FA]/15 rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-5 relative">
+      <button onclick="closeInquiryModal()" class="absolute top-5 right-5 text-[#A1A1AA] hover:text-[#F8F8FA] text-xl cursor-pointer">✕</button>
+      <div>
+        <h3 class="font-display text-2xl font-bold text-[#F8F8FA]">เริ่มโปรเจกต์กับเรา</h3>
+        <p class="text-xs sm:text-sm text-[#A1A1AA] mt-1">บอกความต้องการของคุณ แล้วทีมงานจะติดต่อกลับโดยเร็วที่สุด</p>
+      </div>
+
+      <form onsubmit="handleInquirySubmit(event)" class="space-y-4">
+        <div>
+          <label class="text-xs font-medium text-[#EBDDFF] block mb-1">ชื่อ-นามสกุล *</label>
+          <input type="text" id="modal-name" required class="jaikla-input-field text-sm" placeholder="เช่น กานต์ ใจกล้า" />
+        </div>
+        <div>
+          <label class="text-xs font-medium text-[#EBDDFF] block mb-1">องค์กร / แบรนด์ *</label>
+          <input type="text" id="modal-org" required class="jaikla-input-field text-sm" placeholder="เช่น บริษัท กขค จำกัด" />
+        </div>
+        <div>
+          <label class="text-xs font-medium text-[#EBDDFF] block mb-1">อีเมล หรือ เบอร์ติดต่อ *</label>
+          <input type="text" id="modal-contact" required class="jaikla-input-field text-sm" placeholder="contact@example.com หรือ 081-xxx-xxxx" />
+        </div>
+        <div>
+          <label class="text-xs font-medium text-[#EBDDFF] block mb-1">รายละเอียดเพิ่มเติม</label>
+          <textarea id="modal-notes" rows="3" class="jaikla-input-field text-sm" placeholder="เป้าหมาย ช่วงเวลา หรือกลุ่มเป้าหมาย"></textarea>
+        </div>
+        <div class="flex gap-3 pt-2">
+          <button type="button" onclick="closeInquiryModal()" class="flex-1 py-3 rounded-xl bg-[#22222A] text-xs font-semibold text-[#A1A1AA] cursor-pointer">ยกเลิก</button>
+          <button type="submit" class="flex-1 jaikla-btn-primary py-3 rounded-xl text-xs font-semibold text-[#F8F8FA] cursor-pointer">ส่งข้อมูล</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    const JOURNEY_DATA = [
+      { idx: '01', name: 'เตรียมพร้อม', headline: 'รู้จักความพร้อมของร่างกาย', desc: 'สังเกตการเคลื่อนไหว ความยืดหยุ่น และความพร้อมก่อนเริ่มกิจกรรม' },
+      { idx: '02', name: 'เคลื่อนไหว', headline: 'ขยับอย่างมั่นใจ', desc: 'เคลื่อนไหวอย่างเป็นธรรมชาติในระดับที่เหมาะกับตัวเอง' },
+      { idx: '03', name: 'พัฒนา', headline: 'พัฒนาอย่างเป็นขั้นตอน', desc: 'ต่อยอดความแข็งแรงและความทนทานด้วยโปรแกรมที่เหมาะสม' },
+      { idx: '04', name: 'ฟื้นฟู', headline: 'ฟื้นตัวให้เหมาะกับตัวเอง', desc: 'ผ่อนคลาย สังเกตร่างกาย และเรียนรู้วิธีดูแลตนเอง' },
+      { idx: '05', name: 'ต่อยอด', headline: 'ทำต่อได้จริงในชีวิต', desc: 'เชื่อมต่อเป็นส่วนหนึ่งของวิถีชีวิตและคอมมูนิตี้ที่ต่อเนื่อง' }
+    ];
+
+    const SOLUTIONS_DATA = [
+      { idx: '01', title: 'โซนฟื้นฟูร่างกายหลังการเคลื่อนไหว', summary: 'พื้นที่ดูแลกล้ามเนื้อและผ่อนคลายความตึงล้าหลังจบกิจกรรม', programs: ['ประเมินความตึงตัวของกล้ามเนื้อ', 'เทคนิคยืดเหยียดเพื่อการฟื้นตัว', 'คำแนะนำการดูแลสรีระเฉพาะบุคคล'] },
+      { idx: '02', title: 'โปรแกรมสุขภาพและการเคลื่อนไหวสำหรับองค์กร', summary: 'ออกแบบกิจกรรมดูแลสุขภาวะคนทำงานอย่างยั่งยืน', programs: ['ประเมิน Office Syndrome', 'เวิร์กชอปจัดสรีระและท่าทาง', 'โปรแกรมขยับร่างกายในที่ทำงาน'] },
+      { idx: '03', title: 'คอมมูนิตี้สำหรับคนที่อยากขยับมากขึ้น', summary: 'พื้นที่และชมรมชวนผู้คนกลับมาเคลื่อนไหวอย่างต่อเนื่อง', programs: ['JAIKLA Run Club ทุกระดับ', 'คลับเดินเพื่อสุขภาพ', 'โปรแกรมดูแลข้อต่อวัย 40+'] },
+      { idx: '04', title: 'เวิร์กชอปทำความเข้าใจร่างกาย', summary: 'เรียนรู้เรื่องร่างกายผ่านการลงมือทำจริง', programs: ['วิเคราะห์โครงสร้างและชีวกลศาสตร์', 'ศาสตร์การวิ่งอย่างปลอดภัย', 'การฟื้นฟูและคลายพังผืด'] }
+    ];
+
+    let currentSolIdx = 0;
+    function renderSolutions() {
+      const list = document.getElementById('solutions-list');
+      if (!list) return;
+      list.innerHTML = SOLUTIONS_DATA.map((s, i) => `
+        <button onclick="selectSolution(${i})" class="text-left p-4 rounded-xl border transition-all cursor-pointer ${i === currentSolIdx ? 'bg-[#4B1FD6]/20 border-[#7C3AED] text-[#F8F8FA]' : 'bg-[#141418] border-[#F8F8FA]/10 text-[#A1A1AA] hover:border-[#7C3AED]/50'}">
+          <div class="flex items-center justify-between text-xs font-mono-tabular">
+            <span>SOLUTION ${s.idx}</span>
+            <span>→</span>
+          </div>
+          <p class="font-semibold text-sm mt-1 text-[#F8F8FA]">${s.title}</p>
+        </button>
+      `).join('');
+
+      const cur = SOLUTIONS_DATA[currentSolIdx];
+      document.getElementById('sol-detail-index').textContent = `SOLUTION ${cur.idx} / 04`;
+      document.getElementById('sol-detail-title').textContent = cur.title;
+      document.getElementById('sol-detail-summary').textContent = cur.summary;
+      document.getElementById('sol-detail-programs').innerHTML = cur.programs.map(p => `<li>· ${p}</li>`).join('');
+    }
+    function selectSolution(i) { currentSolIdx = i; renderSolutions(); }
+
+    function openInquiryModal() {
+      const m = document.getElementById('inquiry-modal');
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+    function closeInquiryModal() {
+      const m = document.getElementById('inquiry-modal');
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      alert('ขอบคุณสำหรับข้อมูล ทีมงาน JAIKLA จะติดต่อกลับโดยเร็วที่สุดครับ');
+      closeInquiryModal();
+    }
+
+    const EN_STRINGS = {
+      'nav.about': 'ABOUT', 'nav.experience': 'EXPERIENCE', 'nav.solutions': 'SOLUTIONS',
+      'nav.science': 'MOVEMENT SCIENCE', 'nav.community': 'COMMUNITY', 'nav.partner': 'FOR PARTNERS',
+      'nav.startProject': 'START A PROJECT', 'hero.line1': 'MOVE BETTER', 'hero.line2': 'LIVE BETTER',
+      'hero.lead': 'We design active wellness experiences that make understanding your body and moving with confidence approachable and real.',
+      'hero.secondaryLead': 'Connecting body literacy, movement, recovery, and community into experiences people love.',
+      'hero.ctaExplore': 'EXPLORE JAIKLA', 'hero.ctaWork': 'TALK TO US'
+    };
+    const TH_STRINGS = {};
+
+    function setLanguage(lang) {
+      document.getElementById('lang-btn-th').className = lang === 'th' ? 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]' : 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]';
+      document.getElementById('lang-btn-en').className = lang === 'en' ? 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer bg-[#4B1FD6] text-[#F8F8FA]' : 'px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer text-[#A1A1AA] hover:text-[#F8F8FA]';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (!TH_STRINGS[k]) TH_STRINGS[k] = el.textContent.trim();
+        el.textContent = lang === 'en' ? (EN_STRINGS[k] || TH_STRINGS[k]) : TH_STRINGS[k];
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('journey-cards-container').innerHTML = JOURNEY_DATA.map(st => `
+        <div class="p-5 rounded-2xl bg-[#141418] border border-[#F8F8FA]/10 flex flex-col justify-between space-y-3">
+          <span class="text-xs font-mono-tabular text-[#EBDDFF]">${st.idx} / 05</span>
+          <div>
+            <h3 class="font-display text-lg font-bold text-[#F8F8FA]">${st.name}</h3>
+            <p class="text-xs text-[#EBDDFF] font-medium mt-0.5">${st.headline}</p>
+            <p class="text-xs text-[#A1A1AA] mt-2 leading-relaxed">${st.desc}</p>
+          </div>
+        </div>
+      `).join('');
+      renderSolutions();
+    });
+
+    window.addEventListener('scroll', () => {
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+      document.getElementById('scroll-progress-bar').style.width = pct + '%';
+    }, { passive: true });
+  </script>
+</body>
+</html>
